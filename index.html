@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="Al je aangiftedatums op één plek. AangifteAlert helpt Nederlandse zzp’ers en kleine ondernemers met belastingdeadlines, herinneringen en voortgang. Gratis basis, optioneel Pro.">
-  <meta name="theme-color" content="#2460ff">
+  <meta name="theme-color" content="#a7ceff">
   <meta property="og:type" content="website">
   <meta property="og:title" content="AangifteAlert — al je aangiftedatums op één plek">
   <meta property="og:description" content="Een duidelijk overzicht van je belastingdeadlines. Met herinneringen en je eigen voortgang. Binnenkort voor iPhone.">
@@ -12,14 +12,15 @@
   <meta property="og:image" content="https://aangiftealert.nl/assets/app-icon.png">
   <link rel="canonical" href="https://aangiftealert.nl/">
   <title>AangifteAlert — al je aangiftedatums op één plek</title>
-  <link rel="icon" href="mark.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css?v=20261006-1">
-  <link rel="stylesheet" href="home.css?v=20261011-4">
+  <link rel="icon" href="assets/app-icon.png?v=20261011" type="image/png">
+  <link rel="apple-touch-icon" href="assets/app-icon.png">
+  <link rel="stylesheet" href="styles.css?v=20261011-1">
+  <link rel="stylesheet" href="home.css?v=20261011-5">
 </head>
 <body class="landing">
   <a class="skip" href="#inhoud">Ga naar inhoud</a>
   <header class="header"><div class="wrap">
-    <a class="brand" href="./" aria-label="AangifteAlert home"><img src="mark.svg" width="42" height="42" alt="">AangifteAlert</a>
+    <a class="brand" href="./" aria-label="AangifteAlert home"><img src="assets/app-icon.png?v=20261011" width="42" height="42" alt="">AangifteAlert</a>
     <nav aria-label="Hoofdnavigatie"><a href="#zo-werkt-het">De app</a><a href="#prijzen">Gratis &amp; Pro</a><a href="mailto:xhjdigital@gmail.com">Contact</a></nav>
   </div></header>
 
@@ -32,21 +33,36 @@
       </div>
 
       <div class="hero-preview" aria-label="Screenshots van AangifteAlert">
-        <figure class="hero-screen screen-home"><img src="assets/app-home-hd.jpg" width="1170" height="2533" alt="Startscherm van AangifteAlert met de volgende deadline en je belastingoverzicht" fetchpriority="high"></figure>
-        <figure class="hero-screen screen-deadlines"><img src="assets/app-deadlines-hd.jpg" width="1170" height="2533" alt="Deadlines in de app met de resterende dagen per btw-aangifte" fetchpriority="high"></figure>
+        <figure class="hero-screen screen-home"><img src="assets/app-home-progress-hd.jpg" width="1170" height="2533" alt="Startscherm met twee openstaande aangiftes en een afgevinkte aangifte" fetchpriority="high"></figure>
+        <figure class="hero-screen screen-deadlines"><img src="assets/app-deadlines-done-hd.jpg" width="1170" height="2533" alt="Deadlines met komende aangiftes en twee afgeronde kwartalen met de groene status Gedaan" fetchpriority="high"></figure>
       </div>
     </section>
 
     <section class="app-gallery wrap" aria-labelledby="gallery-title">
       <h2 id="gallery-title">Aangiftes en herinneringen</h2>
       <div class="gallery-grid">
-        <figure class="gallery-panel gallery-filings"><figcaption>Houd je aangiftes bij</figcaption><img src="assets/app-filings-hd.jpg" width="1170" height="2533" alt="Aangiftescherm met openstaande btw-aangiftes en hun periodes" loading="lazy"></figure>
+        <figure class="gallery-panel gallery-filings"><figcaption>Vink je aangiftes af</figcaption><img src="assets/app-filings-done-hd.jpg" width="1170" height="2533" alt="De tab Afgerond met de ingediende en betaalde btw-aangiftes van Q1 en Q2" loading="lazy"></figure>
         <figure class="gallery-panel gallery-reminders"><figcaption>Kies je herinneringen</figcaption><img src="assets/app-reminders-hd.jpg" width="1170" height="2533" alt="Herinneringen instellen op 14, 7 of 1 dag voor de deadline" loading="lazy"></figure>
       </div>
     </section>
 
     <section id="prijzen" class="pricing wrap" aria-labelledby="pricing-title">
       <h2 id="pricing-title">Gratis &amp; Pro</h2>
+      <div class="screen-tour">
+        <fieldset class="tour-options">
+          <legend>Schermtour</legend>
+          <label><input type="radio" name="screen-tour" id="tour-free" value="free"><span>Gratis</span></label>
+          <label><input type="radio" name="screen-tour" id="tour-pro" value="pro" checked><span>Pro</span></label>
+        </fieldset>
+        <div class="tour-slide tour-free">
+          <img src="assets/app-reminders-hd.jpg" width="1170" height="2533" alt="Gratis instellingen voor meldingen op je toestel; eigen momenten zijn gemarkeerd als Pro" loading="lazy">
+          <div class="tour-copy"><h3>Meldingen op je toestel</h3><ul><li>Standaard herinneringsdagen <span class="feature-access">Gratis</span></li><li>Btw en inkomstenbelasting <span class="feature-access">Gratis</span></li><li>Geen account nodig <span class="feature-access">Gratis</span></li></ul></div>
+        </div>
+        <div class="tour-slide tour-pro">
+          <img src="assets/app-pro-hd.jpg" width="1170" height="2533" alt="De Pro-pagina in de app met e-mail, sms, extra herinneringsmomenten en het jaarabonnement van 7,99 euro" loading="lazy">
+          <div class="tour-copy"><h3>Meer herinneringen met Pro</h3><ul><li>E-mailherinneringen <span class="feature-access">Pro</span></li><li>Sms-herinneringen <span class="feature-access">Pro</span></li><li>Extra herinneringsmomenten <span class="feature-access">Pro</span></li></ul></div>
+        </div>
+      </div>
       <div class="plans">
         <article class="plan plan-free" aria-labelledby="free-title"><h3 id="free-title">AangifteAlert</h3><p class="price">Gratis</p><ul><li>Btw en inkomstenbelasting</li><li>Meldingen op je toestel</li><li>Aangifte- en betaalvoortgang</li><li>Deadlines naar je agenda</li><li>Zonder account</li></ul></article>
         <article class="plan plan-pro" aria-labelledby="pro-title"><h3 id="pro-title">AangifteAlert Pro</h3><p class="price">€7,99 <span>per jaar</span></p><ul><li>E-mail en sms</li><li>Eigen herinneringen</li><li>Meerdere ondernemingen</li><li>Extra belastingdeadlines</li><li>Synchronisatie en verzendhistorie</li></ul><p class="plan-bottom">Jaarlijks verlengd. Opzegbaar via Apple.</p></article>
