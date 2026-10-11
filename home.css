@@ -4,7 +4,7 @@
 .landing .brand img { flex-shrink:0; }
 .landing :where(h1,h2,h3,p) { margin-top:0; }
 .landing nav a:hover { color:var(--blue); }
-.hero { display:grid; grid-template-columns:1.2fr 1fr; gap:72px; align-items:center; padding:30px 0 72px; scroll-margin-top:24px; }
+.hero { display:grid; grid-template-columns:1.05fr 1.1fr; gap:44px; align-items:center; padding:30px 0 72px; scroll-margin-top:24px; }
 .hero-copy,.hero-preview { min-width:0; }
 .availability { color:var(--body); font-size:15px; margin-bottom:24px; }
 .hero h1 { font-size:clamp(42px,5.3vw,64px); line-height:1.08; letter-spacing:-2.8px; font-weight:700; margin-bottom:32px; }
@@ -12,33 +12,18 @@
 .button-blue { background:var(--blue); color:white; }
 .button:active { transform:scale(.97); }
 @media(hover:hover) and (pointer:fine) { .button-blue:hover { background:#164fe5; } }
-.hero-preview { position:relative; display:flex; align-items:center; justify-content:center; padding:30px 22px; background:var(--quiet); border-radius:32px; }
-.phone { position:relative; width:344px; border:7px solid white; border-radius:43px; background:#fff; box-shadow:0 15px 50px #224b8720,0 0 0 1px #e0e8f6; overflow:hidden; }
-.phone-top { display:flex; justify-content:space-between; align-items:center; height:45px; padding:0 23px; font-size:13px; font-weight:700; color:var(--navy); }
-.phone-island { width:90px; height:22px; border-radius:15px; background:var(--navy); }
-.phone-signal { font-size:11px; letter-spacing:1px; }
-.phone-screen { padding:12px 13px 24px; }
-.preview-heading { display:flex; align-items:center; justify-content:space-between; color:var(--navy); font-size:29px; font-weight:800; letter-spacing:-1px; margin-bottom:17px; }
-.preview-add { color:var(--blue); font-size:25px; width:34px; height:34px; line-height:30px; text-align:center; border-radius:50%; background:var(--wash); font-weight:500; }
-.preview-filters { display:flex; gap:7px; margin-bottom:18px; font-size:10px; color:#526c9d; }
-.preview-filters span { padding:8px 13px; border-radius:25px; background:var(--wash); line-height:1.4; }
-.preview-filters .selected { color:white; background:var(--blue); }
-.deadline-preview { position:relative; display:flex; align-items:flex-start; gap:10px; border:1px solid var(--line); border-radius:17px; padding:15px 11px; margin-bottom:10px; min-height:111px; }
-.deadline-icon { display:flex; justify-content:center; align-items:center; background:var(--soft-blue); width:39px; height:39px; border-radius:50%; flex-shrink:0; }
-.deadline-icon svg { width:23px; height:23px; stroke:var(--blue); stroke-width:2; stroke-linecap:round; }
-.deadline-copy { flex:1; min-width:0; }
-.deadline-copy strong { display:block; font-size:13px; color:var(--navy); line-height:1.6; font-weight:750; }
-.deadline-copy>span { display:block; font-size:10px; color:#58709b; line-height:1.7; }
-.deadline-meta { display:flex; align-items:center; justify-content:space-between; gap:4px; font-size:9px; color:#58709b; margin-top:10px; white-space:nowrap; }
-.status { padding:5px 9px; border-radius:18px; font-size:9px; font-weight:650; }
-.upcoming { color:#164ed6; background:var(--soft-blue); }
-.done { color:#007961; background:#e3f7f0; }
-.preview-chevron { position:absolute; right:11px; top:11px; color:#718bb3; font-size:22px; line-height:1; }
-.phone-nav { display:flex; justify-content:space-around; text-align:center; padding:14px 8px 4px; border-top:1px solid var(--line); color:#718bb3; font-size:21px; line-height:1; }
-.phone-nav small { display:block; font-size:9px; line-height:1.7; margin-top:4px; }
-.phone-nav .active { color:var(--blue); }
-.phone-home { width:105px; height:4px; border-radius:3px; background:#bdc9dc; margin:12px auto 4px; }
-
+.hero-preview { position:relative; display:flex; align-items:center; justify-content:center; min-height:620px; padding:20px 0; }
+.hero-screen { margin:0; flex:none; width:255px; background:white; padding:5px; border:1px solid #d7deea; border-radius:26px; box-shadow:0 12px 32px #193f7914; overflow:hidden; }
+.hero-screen img { display:block; width:100%; height:auto; border-radius:20px; }
+.screen-home { transform:translateY(-25px); margin-right:-36px; }
+.screen-deadlines { transform:translateY(25px); position:relative; }
+.app-gallery { padding-bottom:66px; }
+.app-gallery h2 { font-size:34px; font-weight:650; letter-spacing:-1.1px; margin:0 0 28px; }
+.gallery-grid { display:grid; grid-template-columns:1fr 1fr; gap:24px; }
+.gallery-panel { margin:0; padding:30px 24px; border-radius:26px; background:#f2f6fd; text-align:center; }
+.gallery-reminders { background:#f5f5f8; }
+.gallery-panel figcaption { font-size:24px; font-weight:650; letter-spacing:-.6px; color:var(--navy); margin-bottom:26px; }
+.gallery-panel img { display:block; width:250px; max-width:100%; height:auto; margin:auto; border:1px solid #e1e6ed; border-radius:20px; box-shadow:0 8px 24px #193f790d; }
 .pricing { padding:10px 0 58px; scroll-margin-top:28px; }
 .pricing h2 { font-size:34px; font-weight:650; letter-spacing:-1.1px; margin:0 0 34px; }
 .plans { display:grid; grid-template-columns:1fr 1fr; gap:0; }
@@ -59,16 +44,10 @@
 .landing .footer .wrap { align-items:center; }
 .footer-links { display:flex; flex-wrap:wrap; gap:24px; }
 @media(max-width:1000px) {
-  .hero { gap:36px; }
+  .hero { gap:28px; grid-template-columns:1fr 1.15fr; }
   .hero h1 { font-size:clamp(36px,5.3vw,54px); letter-spacing:-2px; }
-  .hero-preview { padding:24px 16px; }
-  .phone { width:310px; }
-  .phone-screen { padding-left:10px; padding-right:10px; }
-  .preview-filters span { padding:8px 10px; }
-  .deadline-preview { gap:7px; padding-left:8px; padding-right:8px; }
-  .deadline-icon { width:32px; height:32px; }
-  .deadline-copy strong { font-size:12px; }
-  .status { padding:5px 6px; }
+  .hero-screen { width:52%; max-width:220px; }
+  .hero-preview { min-height:540px; }
 }
 @media(max-width:760px) {
   .landing .header .wrap { min-height:78px; }
@@ -76,13 +55,19 @@
   .landing .brand img { width:34px; height:34px; }
   .landing nav { gap:15px; }
   .landing nav a { font-size:13px; }
-  .hero { grid-template-columns:1fr; gap:32px; padding:32px 0 46px; }
+  .hero { grid-template-columns:1fr; gap:20px; padding:30px 0 36px; }
   .hero h1 { font-size:clamp(34px,8.8vw,64px); letter-spacing:-2px; margin-bottom:26px; }
   .availability { margin-bottom:18px; }
-  .hero-preview { padding:28px 16px; }
-  .phone { width:326px; max-width:100%; }
+  .hero-preview { min-height:0; padding:36px 0; }
+  .hero-screen { width:45%; max-width:270px; }
+  .screen-home { margin-right:-22px; transform:translateY(-15px); }
+  .screen-deadlines { transform:translateY(15px); }
+  .app-gallery { padding-bottom:42px; }
+  .app-gallery h2,.pricing h2 { font-size:29px; margin-bottom:24px; }
+  .gallery-grid { gap:16px; }
+  .gallery-panel { padding:24px 16px; }
+  .gallery-panel figcaption { font-size:20px; line-height:1.25; }
   .pricing { padding-top:14px; padding-bottom:36px; }
-  .pricing h2 { font-size:29px; margin-bottom:30px; }
   .plan { padding-right:24px; }
   .plan-pro { padding-left:24px; padding-right:0; }
   .price { font-size:33px; }
@@ -91,18 +76,13 @@
   .landing .header .wrap { padding-top:16px; padding-bottom:16px; flex-direction:row; align-items:center; flex-wrap:wrap; gap:8px 20px; }
   .landing nav { gap:21px; }
   .hero { padding-top:24px; }
-  .hero-preview { border-radius:24px; padding:24px 10px; }
-  .phone { border-width:5px; }
-  .phone-top { padding:0 15px; }
-  .phone-screen { padding-left:8px; padding-right:8px; }
-  .preview-filters { gap:5px; }
-  .preview-filters span { padding:8px 9px; }
-  .deadline-preview { padding-left:7px; padding-right:7px; gap:6px; }
-  .deadline-icon { width:28px; height:28px; }
-  .deadline-copy strong { font-size:11px; }
-  .deadline-copy>span { font-size:9px; }
-  .deadline-meta { font-size:8px; }
-  .status { padding:4px 5px; font-size:8px; }
+  .hero-screen { width:48%; padding:3px; border-radius:16px; }
+  .hero-screen img { border-radius:12px; }
+  .screen-home { margin-right:-16px; }
+  .gallery-grid { grid-template-columns:1fr; }
+  .gallery-panel { padding:24px; }
+  .gallery-panel img { width:265px; }
+  .gallery-panel figcaption { font-size:22px; }
   .plans { grid-template-columns:1fr; gap:30px; }
   .plan,.plan-pro { padding:0; border:0; }
   .plan-pro { padding-top:30px; border-top:1px solid var(--line); }
