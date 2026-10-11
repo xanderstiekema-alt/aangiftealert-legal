@@ -15,9 +15,16 @@
   <link rel="icon" href="assets/app-icon.png?v=20261011" type="image/png">
   <link rel="apple-touch-icon" href="assets/app-icon.png">
   <link rel="stylesheet" href="styles.css?v=20261011-1">
-  <link rel="stylesheet" href="home.css?v=20261011-5">
+  <link rel="stylesheet" href="home.css?v=20261011-6">
 </head>
 <body class="landing">
+  <svg class="status-bar-defs" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="0" height="0"><defs><symbol id="app-status-bar" viewBox="0 0 390 52">
+    <text x="30" y="32" fill="#111" font-family="Arial,sans-serif" font-size="16" font-weight="700">9:41</text>
+    <rect x="145" y="13" width="100" height="27" rx="14" fill="#111"/>
+    <g fill="#111"><rect x="283" y="28" width="3" height="5" rx="1"/><rect x="288" y="25" width="3" height="8" rx="1"/><rect x="293" y="22" width="3" height="11" rx="1"/><rect x="298" y="19" width="3" height="14" rx="1"/></g>
+    <g fill="none" stroke="#111" stroke-width="2.4" stroke-linecap="round"><path d="M309 23 Q318 15 327 23"/><path d="M312 27 Q318 22 324 27"/></g><circle cx="318" cy="31" r="1.6" fill="#111"/>
+    <rect x="335" y="20" width="24" height="13" rx="3" fill="none" stroke="#111" stroke-opacity=".45"/><rect x="337" y="22" width="20" height="9" rx="1.5" fill="#111"/><path d="M361 24v5" stroke="#111" stroke-width="2" stroke-linecap="round"/>
+  </symbol></defs></svg>
   <a class="skip" href="#inhoud">Ga naar inhoud</a>
   <header class="header"><div class="wrap">
     <a class="brand" href="./" aria-label="AangifteAlert home"><img src="assets/app-icon.png?v=20261011" width="42" height="42" alt="">AangifteAlert</a>
@@ -33,16 +40,16 @@
       </div>
 
       <div class="hero-preview" aria-label="Screenshots van AangifteAlert">
-        <figure class="hero-screen screen-home"><img src="assets/app-home-progress-hd.jpg" width="1170" height="2533" alt="Startscherm met twee openstaande aangiftes en een afgevinkte aangifte" fetchpriority="high"></figure>
-        <figure class="hero-screen screen-deadlines"><img src="assets/app-deadlines-done-hd.jpg" width="1170" height="2533" alt="Deadlines met komende aangiftes en twee afgeronde kwartalen met de groene status Gedaan" fetchpriority="high"></figure>
+        <figure class="hero-screen screen-home"><svg class="app-status-bar" viewBox="0 0 390 52" aria-hidden="true" focusable="false"><use href="#app-status-bar"/></svg><img src="assets/app-home-progress-hd.jpg" width="1170" height="2533" alt="Startscherm met twee openstaande aangiftes en een afgevinkte aangifte" fetchpriority="high"></figure>
+        <figure class="hero-screen screen-deadlines"><svg class="app-status-bar" viewBox="0 0 390 52" aria-hidden="true" focusable="false"><use href="#app-status-bar"/></svg><img src="assets/app-deadlines-done-hd.jpg" width="1170" height="2533" alt="Deadlines met komende aangiftes en twee afgeronde kwartalen met de groene status Gedaan" fetchpriority="high"></figure>
       </div>
     </section>
 
     <section class="app-gallery wrap" aria-labelledby="gallery-title">
       <h2 id="gallery-title">Aangiftes en herinneringen</h2>
       <div class="gallery-grid">
-        <figure class="gallery-panel gallery-filings"><figcaption>Vink je aangiftes af</figcaption><img src="assets/app-filings-done-hd.jpg" width="1170" height="2533" alt="De tab Afgerond met de ingediende en betaalde btw-aangiftes van Q1 en Q2" loading="lazy"></figure>
-        <figure class="gallery-panel gallery-reminders"><figcaption>Kies je herinneringen</figcaption><img src="assets/app-reminders-hd.jpg" width="1170" height="2533" alt="Herinneringen instellen op 14, 7 of 1 dag voor de deadline" loading="lazy"></figure>
+        <figure class="gallery-panel gallery-filings"><figcaption>Vink je aangiftes af</figcaption><div class="app-screen"><svg class="app-status-bar" viewBox="0 0 390 52" aria-hidden="true" focusable="false"><use href="#app-status-bar"/></svg><img src="assets/app-filings-done-hd.jpg" width="1170" height="2533" alt="De tab Afgerond met de ingediende en betaalde btw-aangiftes van Q1 en Q2" loading="lazy"></div></figure>
+        <figure class="gallery-panel gallery-reminders"><figcaption>Kies je herinneringen</figcaption><div class="app-screen"><svg class="app-status-bar" viewBox="0 0 390 52" aria-hidden="true" focusable="false"><use href="#app-status-bar"/></svg><img src="assets/app-reminders-hd.jpg" width="1170" height="2533" alt="Herinneringen instellen op 14, 7 of 1 dag voor de deadline" loading="lazy"></div></figure>
       </div>
     </section>
 
@@ -55,11 +62,11 @@
           <label><input type="radio" name="screen-tour" id="tour-pro" value="pro" checked><span>Pro</span></label>
         </fieldset>
         <div class="tour-slide tour-free">
-          <img src="assets/app-reminders-hd.jpg" width="1170" height="2533" alt="Gratis instellingen voor meldingen op je toestel; eigen momenten zijn gemarkeerd als Pro" loading="lazy">
+          <div class="app-screen"><svg class="app-status-bar" viewBox="0 0 390 52" aria-hidden="true" focusable="false"><use href="#app-status-bar"/></svg><img src="assets/app-reminders-hd.jpg" width="1170" height="2533" alt="Gratis instellingen voor meldingen op je toestel; eigen momenten zijn gemarkeerd als Pro" loading="lazy"></div>
           <div class="tour-copy"><h3>Meldingen op je toestel</h3><ul><li>Standaard herinneringsdagen <span class="feature-access">Gratis</span></li><li>Btw en inkomstenbelasting <span class="feature-access">Gratis</span></li><li>Geen account nodig <span class="feature-access">Gratis</span></li></ul></div>
         </div>
         <div class="tour-slide tour-pro">
-          <img src="assets/app-pro-hd.jpg" width="1170" height="2533" alt="De Pro-pagina in de app met e-mail, sms, extra herinneringsmomenten en het jaarabonnement van 7,99 euro" loading="lazy">
+          <div class="app-screen"><svg class="app-status-bar" viewBox="0 0 390 52" aria-hidden="true" focusable="false"><use href="#app-status-bar"/></svg><img src="assets/app-pro-hd.jpg" width="1170" height="2533" alt="De Pro-pagina in de app met e-mail, sms, extra herinneringsmomenten en het jaarabonnement van 7,99 euro" loading="lazy"></div>
           <div class="tour-copy"><h3>Meer herinneringen met Pro</h3><ul><li>E-mailherinneringen <span class="feature-access">Pro</span></li><li>Sms-herinneringen <span class="feature-access">Pro</span></li><li>Extra herinneringsmomenten <span class="feature-access">Pro</span></li></ul></div>
         </div>
       </div>
@@ -73,6 +80,6 @@
     <div class="wrap responsibility"><p>AangifteAlert is een onafhankelijke app. Je controleert je persoonlijke deadlines met je aangiftebrief en de officiële portalen van de Belastingdienst. Aangifte doen en betalen doe je zelf.</p></div>
   </main>
 
-  <footer class="footer"><div class="wrap"><p>© 2026 Xander Stiekema · AangifteAlert</p><div class="footer-links"><a href="privacy/">Privacyverklaring</a><a href="terms/">Gebruiksvoorwaarden</a><a href="mailto:xhjdigital@gmail.com">Contact</a></div></div></footer>
+  <footer class="footer"><div class="wrap"><p>© 2026 XHJ Digital · AangifteAlert</p><div class="footer-links"><a href="privacy/">Privacyverklaring</a><a href="terms/">Gebruiksvoorwaarden</a><a href="mailto:xhjdigital@gmail.com">Contact</a></div></div></footer>
 </body>
 </html>

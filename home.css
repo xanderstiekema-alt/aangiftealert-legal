@@ -14,16 +14,20 @@
 @media(hover:hover) and (pointer:fine) { .button-blue:hover { background:#164fe5; } }
 .hero-preview { position:relative; display:flex; align-items:center; justify-content:center; min-height:620px; padding:20px 0; background:#e8f3ff; border-radius:28px; }
 .hero-screen { margin:0; flex:none; width:255px; background:white; padding:5px; border:1px solid #d7deea; border-radius:26px; box-shadow:0 12px 32px #193f7914; overflow:hidden; }
-.hero-screen img { display:block; width:100%; height:auto; border-radius:20px; }
+.status-bar-defs { position:absolute; overflow:hidden; }
+.app-status-bar { display:block; width:100%; height:auto; background:white; }
+.app-screen { overflow:hidden; background:white; }
+.hero-screen img { display:block; width:100%; height:auto; }
 .screen-home { transform:translateY(-25px); margin-right:-36px; }
 .screen-deadlines { transform:translateY(25px); position:relative; }
 .app-gallery { padding-bottom:66px; }
 .app-gallery h2 { font-size:34px; font-weight:650; letter-spacing:-1.1px; margin:0 0 28px; }
-.gallery-grid { display:grid; grid-template-columns:1fr 1fr; gap:24px; }
-.gallery-panel { margin:0; padding:30px 24px; border-radius:26px; background:#e8f3ff; text-align:center; }
+.gallery-grid { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:24px; }
+.gallery-panel { min-width:0; margin:0; padding:30px 24px; border-radius:26px; background:#e8f3ff; text-align:center; }
 .gallery-reminders { background:#dfedff; }
 .gallery-panel figcaption { font-size:24px; font-weight:650; letter-spacing:-.6px; color:var(--navy); margin-bottom:26px; }
-.gallery-panel img { display:block; width:250px; max-width:100%; height:auto; margin:auto; border:1px solid #e1e6ed; border-radius:20px; box-shadow:0 8px 24px #193f790d; }
+.gallery-panel .app-screen { width:250px; max-width:100%; margin:auto; border:1px solid #e1e6ed; border-radius:20px; box-shadow:0 8px 24px #193f790d; }
+.app-screen img { display:block; width:100%; height:auto; }
 .pricing { padding:10px 0 58px; scroll-margin-top:28px; }
 .pricing h2 { font-size:34px; font-weight:650; letter-spacing:-1.1px; margin:0 0 34px; }
 .screen-tour { padding:28px 36px; border-radius:26px; background:var(--quiet); margin-bottom:36px; }
@@ -35,7 +39,7 @@
 .tour-options input:checked+span { background:var(--blue); color:white; }
 .tour-options input:focus-visible+span { outline:3px solid var(--blue); outline-offset:4px; }
 .tour-slide { display:grid; grid-template-columns:270px minmax(0,1fr); gap:44px; align-items:center; }
-.tour-slide>img { display:block; width:230px; max-width:100%; height:auto; border-radius:18px; border:1px solid var(--line); margin:auto; }
+.tour-slide>.app-screen { width:230px; max-width:100%; border-radius:18px; border:1px solid var(--line); margin:auto; }
 .tour-free { display:none; }
 .screen-tour:has(#tour-free:checked) .tour-free { display:grid; }
 .screen-tour:has(#tour-free:checked) .tour-pro { display:none; }
@@ -99,11 +103,10 @@
   .landing nav { gap:21px; }
   .hero { padding-top:24px; }
   .hero-screen { width:48%; padding:3px; border-radius:16px; }
-  .hero-screen img { border-radius:12px; }
   .screen-home { margin-right:-16px; }
-  .gallery-grid { grid-template-columns:1fr; }
+  .gallery-grid { grid-template-columns:minmax(0,1fr); }
   .gallery-panel { padding:24px; }
-  .gallery-panel img { width:265px; }
+  .gallery-panel .app-screen { width:265px; }
   .gallery-panel figcaption { font-size:22px; }
   .plans { grid-template-columns:1fr; gap:30px; }
   .plan,.plan-pro { padding:0; border:0; }
