@@ -2,7 +2,7 @@
 .landing .header { border:0; }
 .landing .header .wrap { min-height:94px; }
 .landing .brand img { flex-shrink:0; }
-.landing h1,.landing h2,.landing h3,.landing p { margin-top:0; }
+.landing :where(h1,h2,h3,p) { margin-top:0; }
 .landing nav a:hover { color:var(--blue); }
 .hero { display:grid; grid-template-columns:1.1fr 1fr; gap:48px; align-items:center; padding:46px 0 82px; }
 .hero-copy,.hero-preview { min-width:0; }
