@@ -1,0 +1,12 @@
+.intro .breadcrumb { font-size:14px; margin-bottom:24px; }
+.deadline-table { margin:24px 0; }
+.deadline-table table { width:100%; border-collapse:collapse; font-size:16px; line-height:1.6; }
+.deadline-table caption { text-align:left; font-size:14px; margin-bottom:12px; }
+.deadline-table th,.deadline-table td { text-align:left; padding:14px 12px; border-bottom:1px solid var(--line); vertical-align:top; }
+.deadline-table thead { background:var(--wash); color:var(--navy); }
+.deadline-table tbody th { font-weight:500; }
+@media(max-width:480px) {
+  .deadline-table table { font-size:14px; }
+  .deadline-table th,.deadline-table td { padding:12px 8px; }
+  .footer nav { flex-wrap:wrap; gap:16px; }
+}
