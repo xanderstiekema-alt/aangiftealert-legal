@@ -49,7 +49,75 @@
         "description": "Een btw-app voor Nederlandse zzp’ers en kleine ondernemers, met belastingdeadlines, herinneringen en aangifte- en betaalvoortgang. Beschikbaar voor iPhone in de App Store.",
         "inLanguage": "nl-NL",
         "isPartOf": { "@id": "https://aangiftealert.nl/#website" },
-        "publisher": { "@id": "https://aangiftealert.nl/#organization" }
+        "publisher": { "@id": "https://aangiftealert.nl/#organization" },
+        "mainEntity": { "@id": "https://aangiftealert.nl/#app" }
+      },
+      {
+        "@type": "MobileApplication",
+        "@id": "https://aangiftealert.nl/#app",
+        "name": "AangifteAlert",
+        "alternateName": "AangifteAlert: Btw op tijd",
+        "url": "https://aangiftealert.nl/",
+        "sameAs": "https://apps.apple.com/nl/app/aangiftealert-btw-op-tijd/id6819453752",
+        "installUrl": "https://apps.apple.com/nl/app/aangiftealert-btw-op-tijd/id6819453752",
+        "image": "https://aangiftealert.nl/assets/app-icon.png",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "iOS 16.4 or later",
+        "availableOnDevice": "iPhone",
+        "countriesSupported": "NL",
+        "description": "Onafhankelijke belastingdeadline-app voor in Nederland gevestigde zzp’ers en kleine ondernemers. De basis is gratis en werkt zonder account. Aangifte indienen en belasting betalen doe je zelf, buiten de app. Pro is een optioneel jaarabonnement.",
+        "isAccessibleForFree": true,
+        "featureList": [
+          "Btw en inkomstenbelasting bijhouden",
+          "Standaard herinneringen op je toestel",
+          "Aangifte- en betaalvoortgang apart afvinken",
+          "Deadlines naar je agenda exporteren",
+          "Basisfuncties zonder account"
+        ],
+        "publisher": { "@id": "https://aangiftealert.nl/#organization" },
+        "mainEntityOfPage": { "@id": "https://aangiftealert.nl/#webpage" },
+        "offers": {
+          "@type": "Offer",
+          "name": "AangifteAlert gratis basis",
+          "price": "0.00",
+          "priceCurrency": "EUR",
+          "url": "https://apps.apple.com/nl/app/aangiftealert-btw-op-tijd/id6819453752",
+          "eligibleRegion": "NL",
+          "description": "Gratis te downloaden voor iPhone. De basisfuncties werken zonder account; het Pro-jaarabonnement is optioneel."
+        },
+        "softwareAddOn": {
+          "@type": "SoftwareApplication",
+          "@id": "https://aangiftealert.nl/#pro",
+          "name": "AangifteAlert Pro",
+          "url": "https://aangiftealert.nl/#prijzen",
+          "applicationCategory": "FinanceApplication",
+          "operatingSystem": "iOS 16.4 or later",
+          "isAccessibleForFree": false,
+          "softwareRequirements": { "@id": "https://aangiftealert.nl/#app" },
+          "description": "Optionele uitbreiding in AangifteAlert. Standaard €7,99 per jaar in Nederland, jaarlijks verlengd totdat je opzegt via Apple. Voor e-mail, sms en synchronisatie is een account nodig. Sms is beperkt tot vier deadlineherinneringen per kalenderjaar per account.",
+          "featureList": [
+            "E-mailherinneringen",
+            "Sms-herinneringen: maximaal vier per kalenderjaar per account",
+            "Eigen herinneringsmomenten",
+            "Extra belastingdeadlines",
+            "Synchronisatie en verzendhistorie"
+          ],
+          "offers": {
+            "@type": "Offer",
+            "name": "AangifteAlert Pro standaard jaarabonnement",
+            "price": "7.99",
+            "priceCurrency": "EUR",
+            "url": "https://aangiftealert.nl/#prijzen",
+            "eligibleRegion": "NL",
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
+              "price": "7.99",
+              "priceCurrency": "EUR",
+              "billingDuration": "P1Y"
+            },
+            "description": "Standaard €7,99 per jaar. Automatische jaarlijkse verlenging; opzegbaar via Apple. Eventuele introductieaanbiedingen en de actuele prijs worden vóór aankoop getoond."
+          }
+        }
       }
     ]
   }
@@ -116,7 +184,7 @@
         <article class="plan plan-free" aria-labelledby="free-title"><h3 id="free-title">AangifteAlert</h3><p class="price">Gratis</p><ul><li>Btw en inkomstenbelasting</li><li>Meldingen op je toestel</li><li>Aangifte- en betaalvoortgang</li><li>Deadlines naar je agenda</li><li>Zonder account</li></ul></article>
         <article class="plan plan-pro" aria-labelledby="pro-title"><h3 id="pro-title">AangifteAlert Pro</h3><p class="price">€7,99 <span>per jaar</span></p><ul><li>E-mail en sms</li><li>Eigen herinneringen</li><li>Extra belastingdeadlines</li><li>Synchronisatie en verzendhistorie</li></ul><p class="plan-bottom">Jaarlijks verlengd. Opzegbaar via Apple.</p></article>
       </div>
-      <p class="pricing-note">Prijs voor Nederland. Pro omvat de gratis functies. Voor e-mail, sms en synchronisatie is een account nodig.</p>
+      <p class="pricing-note">Standaardprijs voor Nederland. Pro omvat de gratis functies. Voor e-mail, sms en synchronisatie is een account nodig. Voor sms geldt maximaal vier deadlineherinneringen per kalenderjaar per account. Eventuele introductieaanbiedingen en de actuele prijs zie je vóór aankoop.</p>
     </section>
 
     <section class="search-content wrap" aria-labelledby="deadline-title">
@@ -128,8 +196,9 @@
     <section id="vragen" class="faq wrap" aria-labelledby="faq-title">
       <h2 id="faq-title">Veelgestelde vragen over de btw-app</h2>
       <details><summary>Voor wie is AangifteAlert?</summary><p>AangifteAlert is bedoeld voor in Nederland gevestigde zzp’ers en kleine ondernemers die hun belastingdeadlines en aangiftevoortgang willen bijhouden. Je bevestigt zelf je aangiftetijdvak. Bij een eerste aangifte of bijzondere situatie controleer je de datums met je aangiftebrief.</p></details>
+      <details><summary>Op welke toestellen werkt de app?</summary><p>AangifteAlert is beschikbaar voor iPhone met iOS 16.4 of nieuwer. Je downloadt de app via de Nederlandse App Store.</p></details>
       <details><summary>Hoe krijg ik een herinnering voor mijn btw-aangifte?</summary><p>Je kiest in de app herinneringsmomenten vóór je deadline en geeft toestemming voor meldingen op je iPhone. De gratis versie gebruikt meldingen op je toestel. Met Pro kun je ook e-mail- en sms-herinneringen instellen; daarvoor is een account nodig. Voor sms geldt maximaal vier deadlineherinneringen per kalenderjaar per account.</p></details>
-      <details><summary>Is de btw-app gratis?</summary><p>De basis is gratis en werkt zonder account. Je krijgt belastingdeadlines, standaardherinneringen, aangifte- en betaalvoortgang en agenda-export. AangifteAlert Pro kost optioneel €7,99 per jaar in de Nederlandse App Store en wordt jaarlijks verlengd totdat je opzegt via Apple.</p></details>
+      <details><summary>Is de btw-app gratis?</summary><p>De basis is gratis en werkt zonder account. Je krijgt belastingdeadlines, standaardherinneringen, aangifte- en betaalvoortgang en agenda-export. AangifteAlert Pro is optioneel en kost standaard €7,99 per jaar in de Nederlandse App Store. Het abonnement wordt jaarlijks verlengd totdat je opzegt via Apple. Eventuele introductieaanbiedingen en de actuele prijs zie je vóór aankoop.</p></details>
       <details><summary>Kan ik met AangifteAlert mijn btw-aangifte indienen?</summary><p>De app helpt je plannen en onthouden. Je dient je aangifte zelf in via Mijn Belastingdienst Zakelijk of je eigen aangiftesoftware en betaalt zelf de btw. Daarna kun je in AangifteAlert apart afvinken dat je hebt ingediend en betaald.</p></details>
       <details><summary>Is AangifteAlert van de Belastingdienst?</summary><p>AangifteAlert is een onafhankelijke app van XHJ Digital en is niet verbonden aan of goedgekeurd door de Belastingdienst. Je aangiftebrief en de officiële portalen zijn altijd leidend voor jouw persoonlijke deadlines.</p></details>
       <details><summary>Waar kan ik de app downloaden?</summary><p>AangifteAlert is beschikbaar voor iPhone. <a href="https://apps.apple.com/nl/app/aangiftealert-btw-op-tijd/id6819453752">Download AangifteAlert in de App Store</a>. De basisfuncties zijn gratis; Pro is optioneel.</p></details>
