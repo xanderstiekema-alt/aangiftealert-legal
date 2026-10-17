@@ -24,7 +24,7 @@
 .hero-screen { width:min(100%,18rem); margin:0; padding:.375rem; border:1px solid #d4deed; background:white; border-radius:1.875rem; box-shadow:0 1rem 2.5rem #193f7914; overflow:hidden; }
 .status-bar-defs { position:absolute; overflow:hidden; }
 .app-status-bar { display:block; width:100%; height:auto; background:white; }
-.screen-viewport { aspect-ratio:.68; overflow:hidden; border-radius:0 0 1.5rem 1.5rem; }
+.screen-viewport { overflow:hidden; border-radius:0 0 1.5rem 1.5rem; }
 .hero-screen img { display:block; width:100%; height:auto; }
 .preview-caption { margin:1.25rem 0 0; font-size:.8125rem; font-weight:500; }
 .section-heading { margin-bottom:2rem; }
@@ -100,7 +100,6 @@
   .hero-reassurance { font-size:.875rem; margin-bottom:1rem; }
   .hero-preview { padding:1.5rem 1.5rem 1rem; }
   .hero-screen { width:16rem; }
-  .screen-viewport { aspect-ratio:1.08; }
   .app-gallery,.pricing { padding:0 0 3.5rem; }
   .gallery-grid,.plans { gap:1.25rem; }
   .gallery-panel h3 { font-size:1.25rem; }
