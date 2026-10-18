@@ -19,8 +19,10 @@
   <title>Btw-app voor zzp: aangifteherinneringen | AangifteAlert</title>
   <link rel="icon" href="assets/app-icon-small.png?v=20261018" type="image/png">
   <link rel="apple-touch-icon" href="assets/app-icon-small.png">
+  <link rel="preload" href="assets/fonts/figtree-bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/figtree-medium.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="styles.css?v=20261011-1">
-  <link rel="stylesheet" href="home.css?v=20261018-4">
+  <link rel="stylesheet" href="home.css?v=20261018-5">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -124,76 +126,136 @@
   </script>
 </head>
 <body class="landing">
-  <svg class="status-bar-defs" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="0" height="0"><defs><symbol id="app-status-bar" viewBox="0 0 390 52">
-    <text x="30" y="32" fill="#111" font-family="Arial,sans-serif" font-size="16" font-weight="700">9:41</text>
-    <rect x="145" y="13" width="100" height="27" rx="14" fill="#111"/>
-    <g fill="#111"><rect x="283" y="28" width="3" height="5" rx="1"/><rect x="288" y="25" width="3" height="8" rx="1"/><rect x="293" y="22" width="3" height="11" rx="1"/><rect x="298" y="19" width="3" height="14" rx="1"/></g>
-    <g fill="none" stroke="#111" stroke-width="2.4" stroke-linecap="round"><path d="M309 23 Q318 15 327 23"/><path d="M312 27 Q318 22 324 27"/></g><circle cx="318" cy="31" r="1.6" fill="#111"/>
-    <rect x="335" y="20" width="24" height="13" rx="3" fill="none" stroke="#111" stroke-opacity=".45"/><rect x="337" y="22" width="20" height="9" rx="1.5" fill="#111"/><path d="M361 24v5" stroke="#111" stroke-width="2" stroke-linecap="round"/>
-  </symbol></defs></svg>
   <a class="skip" href="#inhoud">Ga naar inhoud</a>
-  <header class="header"><div class="wrap">
-    <a class="brand" href="./" aria-label="AangifteAlert home"><img src="assets/app-icon-small.png?v=20261018" width="42" height="42" alt="">AangifteAlert</a>
-    <nav aria-label="Hoofdnavigatie"><a href="#zo-werkt-het">De app</a><a href="#prijzen">Gratis &amp; Pro</a><a href="mailto:xhjdigital@gmail.com">Contact</a></nav>
+  <header class="site-header"><div class="wrap">
+    <a class="brand" href="./" aria-label="AangifteAlert home"><img src="assets/app-icon-256.png" width="40" height="40" alt="">AangifteAlert</a>
+    <nav class="site-nav" aria-label="Hoofdnavigatie"><a href="#zo-werkt-het">De app</a><a href="#prijzen">Gratis &amp; Pro</a><a class="nav-optional" href="#vragen">Vragen</a><a class="nav-contact" href="mailto:xhjdigital@gmail.com">Contact</a></nav>
   </div></header>
 
   <main id="inhoud">
-    <section class="hero wrap" aria-labelledby="hero-title">
-      <div class="hero-copy">
-        <p class="availability">AangifteAlert voor iPhone</p>
-        <h1 id="hero-title">Weet wanneer je aangifte moet doen.</h1>
-        <p class="hero-description">Je btw en inkomstenbelasting in beeld, met een herinnering vóór de deadline.</p>
-        <p class="hero-reassurance">De basis is gratis en werkt zonder account.</p>
-        <div class="hero-actions">
-          <a class="app-store-badge" href="https://apps.apple.com/nl/app/aangiftealert-btw-op-tijd/id6819453752" aria-label="Download AangifteAlert in de App Store"><img src="assets/download-on-the-app-store-nl.svg" width="144" height="48" alt="Download in de App Store"></a>
-          <a class="pricing-link" href="#prijzen">Bekijk Gratis &amp; Pro</a>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow enter" style="--d:0ms">Voor zzp’ers en kleine ondernemers · iPhone</p>
+          <h1 id="hero-title" class="enter" style="--d:70ms">Weet wanneer je aangifte moet doen.</h1>
+          <p class="hero-description enter" style="--d:140ms">Je btw en inkomstenbelasting in beeld, met een herinnering vóór de deadline. De basis is gratis en werkt zonder account.</p>
+          <div class="hero-actions enter" style="--d:210ms">
+            <a class="app-store-badge" href="https://apps.apple.com/nl/app/aangiftealert-btw-op-tijd/id6819453752" aria-label="Download AangifteAlert in de App Store"><img src="assets/download-on-the-app-store-nl.svg" width="156" height="52" alt="Download in de App Store"></a>
+            <a class="arrow-link" href="#prijzen">Bekijk Gratis &amp; Pro <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></a>
+          </div>
+          <ul class="hero-facts enter" style="--d:280ms">
+            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#235BE8" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Btw en inkomstenbelasting</li>
+            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#235BE8" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Meldingen op je iPhone</li>
+            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#235BE8" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Zonder account</li>
+          </ul>
+        </div>
+
+        <figure class="hero-device">
+          <div class="device-stage">
+            <div class="notification" aria-hidden="true">
+              <img src="assets/app-icon-256.png" width="38" height="38" alt="">
+              <div>
+                <p class="notification-meta"><strong>AangifteAlert</strong><span>nu</span></p>
+                <p class="notification-title">Btw-aangifte Q3 2026</p>
+                <p class="notification-body">Nog 7 dagen. Indienen en betalen vóór 31 oktober.</p>
+              </div>
+            </div>
+            <div class="device"><div class="device-screen"><img src="assets/hero-home.jpg" width="780" height="1689" alt="Startscherm van AangifteAlert met de volgende btw-deadline, snel overzicht en voortgang" fetchpriority="high"></div></div>
+          </div>
+        </figure>
+      </div>
+    </section>
+
+    <section id="zo-werkt-het" class="section" aria-labelledby="how-title">
+      <div class="wrap">
+        <div class="section-heading reveal"><p class="eyebrow">Zo werkt het</p><h2 id="how-title">Overzicht vooraf. Rust als het klaar is.</h2></div>
+        <div class="features">
+          <div class="feature">
+            <div class="feature-copy reveal"><p class="step" aria-hidden="true">1</p><h3>Al je deadlines op een rij.</h3><p>Btw en inkomstenbelasting samen, met de datum en hoeveel dagen je nog hebt. Filter op belastingsoort als je alleen je btw wilt zien.</p></div>
+            <figure class="shot reveal"><img src="assets/detail-deadlines.jpg" width="1000" height="838" alt="Deadlinelijst met Btw-aangifte Q3 2026 over 20 dagen en Q4 2026 over 112 dagen" loading="lazy" decoding="async"></figure>
+          </div>
+          <div class="feature">
+            <div class="feature-copy reveal"><p class="step" aria-hidden="true">2</p><h3>Een seintje op jouw moment.</h3><p>Kies wanneer je iPhone je herinnert, bijvoorbeeld 14, 7 en 1 dag van tevoren.</p></div>
+            <figure class="shot reveal"><img src="assets/detail-reminders.jpg" width="1000" height="782" alt="Herinneringsmomenten: 14 dagen, 7 dagen en 1 dag vooraf zijn geselecteerd, tijdstip 09:00" loading="lazy" decoding="async"></figure>
+          </div>
+          <div class="feature">
+            <div class="feature-copy reveal"><p class="step" aria-hidden="true">3</p><h3>Gedaan? Vink het af.</h3><p>Houd apart bij of je aangifte is ingediend en betaald. Zo zie je meteen wat nog aandacht vraagt.</p></div>
+            <figure class="shot shot-done reveal"><img src="assets/detail-filings.jpg" width="1000" height="368" alt="Btw-aangifte Q2 2026 met groene vink en status Afgerond" loading="lazy" decoding="async"><figcaption><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#285D49" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path class="draw" d="M8 12.5l2.8 2.8L16.5 9.5"/></svg>Ingediend én betaald. Afgerond.</figcaption></figure>
+          </div>
         </div>
       </div>
+    </section>
 
-      <div class="hero-preview">
-        <figure class="hero-screen"><svg class="app-status-bar" viewBox="0 0 390 52" aria-hidden="true" focusable="false"><use href="#app-status-bar"/></svg><div class="screen-viewport"><img src="assets/app-home-progress-hd.jpg" width="1170" height="2533" alt="Voorbeeld van het startscherm met de volgende btw-deadline" fetchpriority="high"></div></figure>
-        <p class="preview-caption">Je volgende deadline. Direct in beeld.</p>
+    <section id="prijzen" class="section" aria-labelledby="pricing-title">
+      <div class="wrap">
+        <div class="section-heading reveal"><p class="eyebrow">Gratis &amp; Pro</p><h2 id="pricing-title">Begin gratis. Kies zelf of je meer wilt.</h2></div>
+        <div class="plans">
+          <article class="plan reveal" aria-labelledby="free-title">
+            <div class="plan-head"><h3 id="free-title">AangifteAlert</h3></div>
+            <p class="price">Gratis</p>
+            <p class="plan-description">Je deadlines en voortgang op één plek.</p>
+            <ul class="checks">
+              <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#235BE8" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Btw en inkomstenbelasting</li>
+              <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#235BE8" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Meldingen op je toestel</li>
+              <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#235BE8" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Aangifte- en betaalvoortgang</li>
+              <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#235BE8" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Deadlines naar je agenda</li>
+              <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#235BE8" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Zonder account</li>
+            </ul>
+            <a class="button button-blue" href="https://apps.apple.com/nl/app/aangiftealert-btw-op-tijd/id6819453752">Download gratis voor iPhone</a>
+          </article>
+          <article class="plan plan-pro reveal" aria-labelledby="pro-title">
+            <div class="plan-head"><h3 id="pro-title">AangifteAlert Pro</h3><p class="plan-badge">Optioneel</p></div>
+            <p class="price">€7,99 <span>per jaar</span></p>
+            <p class="plan-description">Alles van Gratis, met extra herinneringen.</p>
+            <ul class="checks">
+              <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#235BE8" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>E-mail en sms<span class="sms-limit">Maximaal 4 sms-herinneringen per kalenderjaar per account</span></span></li>
+              <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#235BE8" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Eigen herinneringsmomenten</li>
+              <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#235BE8" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Extra belastingdeadlines</li>
+              <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#235BE8" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Synchronisatie en verzendhistorie</li>
+            </ul>
+            <p class="plan-bottom">Pro kies je in de app. Jaarlijks verlengd, opzegbaar via Apple.</p>
+          </article>
+        </div>
+        <p class="pricing-note">Standaardprijs voor Nederland. Pro omvat de gratis functies. Voor e-mail, sms en synchronisatie is een account nodig. Voor sms geldt maximaal vier deadlineherinneringen per kalenderjaar per account. Eventuele introductieaanbiedingen en de actuele prijs zie je vóór aankoop.</p>
       </div>
     </section>
 
-    <section id="zo-werkt-het" class="app-gallery wrap" aria-labelledby="gallery-title">
-      <div class="section-heading"><p class="eyebrow">Zo werkt het</p><h2 id="gallery-title">Overzicht vooraf.<br>Rust als het klaar is.</h2></div>
-      <div class="gallery-grid">
-        <figure class="gallery-panel gallery-reminders"><figcaption><h3>Een seintje op jouw moment.</h3><p>Kies wanneer je iPhone je herinnert, bijvoorbeeld 14, 7 en 1 dag van tevoren.</p></figcaption><div class="detail-window detail-reminders"><img src="assets/app-reminders-hd.jpg" width="1170" height="2533" alt="Detail van de herinneringskeuze: 14, 7 en 1 dag vooraf zijn geselecteerd" loading="lazy"></div></figure>
-        <figure class="gallery-panel gallery-filings"><figcaption><h3>Gedaan? Vink het af.</h3><p>Houd apart bij of je btw-aangifte is ingediend en betaald. Zo zie je wat nog aandacht vraagt.</p></figcaption><div class="completion-preview"><div class="detail-window detail-filings"><img src="assets/app-filings-done-hd.jpg" width="1170" height="2533" alt="Detail van een afgeronde btw-aangifte voor Q2, met groene vink en status Afgerond" loading="lazy"></div><p>Ingediend én betaald. Afgerond.</p></div></figure>
+    <section id="vragen" class="section faq" aria-labelledby="faq-title">
+      <div class="wrap faq-grid">
+        <div class="faq-intro reveal">
+          <h2 id="faq-title">Veelgestelde vragen over de btw-app</h2>
+          <div class="deadline-card">
+            <h3>Wanneer moet je btw-aangifte doen?</h3>
+            <p>Je aangiftetijdvak bepaalt je deadline. AangifteAlert toont de aangifte- en betaaldatum op basis van je bevestigde btw-situatie. Met herinneringen vooraf houd je de komende deadline in beeld.</p>
+            <p>Doe je per kwartaal aangifte? Bekijk de <a href="btw-aangifte-deadline/">btw-aangifte deadlines voor 2026</a>, inclusief de betaaldatums en uitleg over maand- en jaaraangifte.</p>
+          </div>
+        </div>
+        <div class="faq-list reveal">
+          <details><summary>Voor wie is AangifteAlert?<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#235BE8" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary><p>AangifteAlert is bedoeld voor in Nederland gevestigde zzp’ers en kleine ondernemers die hun belastingdeadlines en aangiftevoortgang willen bijhouden. Je bevestigt zelf je aangiftetijdvak. Bij een eerste aangifte of bijzondere situatie controleer je de datums met je aangiftebrief.</p></details>
+          <details><summary>Op welke toestellen werkt de app?<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#235BE8" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary><p>AangifteAlert is beschikbaar voor iPhone met iOS 16.4 of nieuwer. Je downloadt de app via de Nederlandse App Store.</p></details>
+          <details><summary>Hoe krijg ik een herinnering voor mijn btw-aangifte?<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#235BE8" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary><p>Je kiest in de app herinneringsmomenten vóór je deadline en geeft toestemming voor meldingen op je iPhone. De gratis versie gebruikt meldingen op je toestel. Met Pro kun je ook e-mail- en sms-herinneringen instellen; daarvoor is een account nodig. Voor sms geldt maximaal vier deadlineherinneringen per kalenderjaar per account.</p></details>
+          <details><summary>Is de btw-app gratis?<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#235BE8" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary><p>De basis is gratis en werkt zonder account. Je krijgt belastingdeadlines, standaardherinneringen, aangifte- en betaalvoortgang en agenda-export. AangifteAlert Pro is optioneel en kost standaard €7,99 per jaar in de Nederlandse App Store. Het abonnement wordt jaarlijks verlengd totdat je opzegt via Apple. Eventuele introductieaanbiedingen en de actuele prijs zie je vóór aankoop.</p></details>
+          <details><summary>Kan ik met AangifteAlert mijn btw-aangifte indienen?<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#235BE8" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary><p>De app helpt je plannen en onthouden. Je dient je aangifte zelf in via Mijn Belastingdienst Zakelijk of je eigen aangiftesoftware en betaalt zelf de btw. Daarna kun je in AangifteAlert apart afvinken dat je hebt ingediend en betaald.</p></details>
+          <details><summary>Is AangifteAlert van de Belastingdienst?<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#235BE8" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary><p>AangifteAlert is een onafhankelijke app van XHJ Digital en is niet verbonden aan of goedgekeurd door de Belastingdienst. Je aangiftebrief en de officiële portalen zijn altijd leidend voor jouw persoonlijke deadlines.</p></details>
+          <details><summary>Waar kan ik de app downloaden?<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#235BE8" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary><p>AangifteAlert is beschikbaar voor iPhone. <a href="https://apps.apple.com/nl/app/aangiftealert-btw-op-tijd/id6819453752">Download AangifteAlert in de App Store</a>. De basisfuncties zijn gratis; Pro is optioneel.</p></details>
+        </div>
       </div>
     </section>
 
-    <section id="prijzen" class="pricing wrap" aria-labelledby="pricing-title">
-      <div class="section-heading"><p class="eyebrow">Gratis &amp; Pro</p><h2 id="pricing-title">Begin gratis.<br>Kies zelf of je meer wilt.</h2></div>
-      <div class="plans">
-        <article class="plan plan-free" aria-labelledby="free-title"><h3 id="free-title">AangifteAlert</h3><p class="price">Gratis</p><p class="plan-description">Je deadlines en voortgang op één plek.</p><ul><li>Btw en inkomstenbelasting</li><li>Meldingen op je toestel</li><li>Aangifte- en betaalvoortgang</li><li>Deadlines naar je agenda</li><li>Zonder account</li></ul><a class="button button-blue" href="https://apps.apple.com/nl/app/aangiftealert-btw-op-tijd/id6819453752">Download gratis voor iPhone</a></article>
-        <article class="plan plan-pro" aria-labelledby="pro-title"><h3 id="pro-title">AangifteAlert Pro</h3><p class="price">€7,99 <span>per jaar</span></p><p class="plan-description">Alles van Gratis, met extra herinneringen.</p><ul><li>E-mail en sms <span class="sms-limit">Maximaal 4 sms-herinneringen per kalenderjaar per account</span></li><li>Eigen herinneringsmomenten</li><li>Extra belastingdeadlines</li><li>Synchronisatie en verzendhistorie</li></ul><p class="plan-bottom">Pro kies je in de app. Jaarlijks verlengd, opzegbaar via Apple.</p></article>
+    <section class="download" aria-labelledby="download-title">
+      <div class="wrap">
+        <div class="download-band reveal">
+          <img src="assets/app-icon-256.png" width="72" height="72" alt="" loading="lazy" decoding="async">
+          <div><h2 id="download-title">Begin gratis, zonder account.</h2><p>Je volgende aangifte begint met overzicht.</p></div>
+          <a class="app-store-badge" href="https://apps.apple.com/nl/app/aangiftealert-btw-op-tijd/id6819453752" aria-label="Download AangifteAlert in de App Store"><img src="assets/download-on-the-app-store-nl.svg" width="156" height="52" alt="Download in de App Store" loading="lazy"></a>
+        </div>
       </div>
-      <p class="pricing-note">Standaardprijs voor Nederland. Pro omvat de gratis functies. Voor e-mail, sms en synchronisatie is een account nodig. Voor sms geldt maximaal vier deadlineherinneringen per kalenderjaar per account. Eventuele introductieaanbiedingen en de actuele prijs zie je vóór aankoop.</p>
     </section>
-
-    <section class="search-content wrap" aria-labelledby="deadline-title">
-      <h2 id="deadline-title">Wanneer moet je btw-aangifte doen?</h2>
-      <p>Je aangiftetijdvak bepaalt je deadline. AangifteAlert toont de aangifte- en betaaldatum op basis van je bevestigde btw-situatie. Met herinneringen vooraf houd je de komende deadline in beeld.</p>
-      <p>Doe je per kwartaal aangifte? Bekijk de <a href="btw-aangifte-deadline/">btw-aangifte deadlines voor 2026</a>, inclusief de betaaldatums en uitleg over maand- en jaaraangifte.</p>
-    </section>
-
-    <section id="vragen" class="faq wrap" aria-labelledby="faq-title">
-      <h2 id="faq-title">Veelgestelde vragen over de btw-app</h2>
-      <details><summary>Voor wie is AangifteAlert?</summary><p>AangifteAlert is bedoeld voor in Nederland gevestigde zzp’ers en kleine ondernemers die hun belastingdeadlines en aangiftevoortgang willen bijhouden. Je bevestigt zelf je aangiftetijdvak. Bij een eerste aangifte of bijzondere situatie controleer je de datums met je aangiftebrief.</p></details>
-      <details><summary>Op welke toestellen werkt de app?</summary><p>AangifteAlert is beschikbaar voor iPhone met iOS 16.4 of nieuwer. Je downloadt de app via de Nederlandse App Store.</p></details>
-      <details><summary>Hoe krijg ik een herinnering voor mijn btw-aangifte?</summary><p>Je kiest in de app herinneringsmomenten vóór je deadline en geeft toestemming voor meldingen op je iPhone. De gratis versie gebruikt meldingen op je toestel. Met Pro kun je ook e-mail- en sms-herinneringen instellen; daarvoor is een account nodig. Voor sms geldt maximaal vier deadlineherinneringen per kalenderjaar per account.</p></details>
-      <details><summary>Is de btw-app gratis?</summary><p>De basis is gratis en werkt zonder account. Je krijgt belastingdeadlines, standaardherinneringen, aangifte- en betaalvoortgang en agenda-export. AangifteAlert Pro is optioneel en kost standaard €7,99 per jaar in de Nederlandse App Store. Het abonnement wordt jaarlijks verlengd totdat je opzegt via Apple. Eventuele introductieaanbiedingen en de actuele prijs zie je vóór aankoop.</p></details>
-      <details><summary>Kan ik met AangifteAlert mijn btw-aangifte indienen?</summary><p>De app helpt je plannen en onthouden. Je dient je aangifte zelf in via Mijn Belastingdienst Zakelijk of je eigen aangiftesoftware en betaalt zelf de btw. Daarna kun je in AangifteAlert apart afvinken dat je hebt ingediend en betaald.</p></details>
-      <details><summary>Is AangifteAlert van de Belastingdienst?</summary><p>AangifteAlert is een onafhankelijke app van XHJ Digital en is niet verbonden aan of goedgekeurd door de Belastingdienst. Je aangiftebrief en de officiële portalen zijn altijd leidend voor jouw persoonlijke deadlines.</p></details>
-      <details><summary>Waar kan ik de app downloaden?</summary><p>AangifteAlert is beschikbaar voor iPhone. <a href="https://apps.apple.com/nl/app/aangiftealert-btw-op-tijd/id6819453752">Download AangifteAlert in de App Store</a>. De basisfuncties zijn gratis; Pro is optioneel.</p></details>
-    </section>
-
-    <section class="download-section wrap" aria-labelledby="download-title"><img class="download-icon" src="assets/app-icon-small.png?v=20261018" width="64" height="64" alt="" loading="lazy"><div><h2 id="download-title">Begin gratis, zonder account.</h2><p>Je volgende aangifte begint met overzicht.</p></div><a class="app-store-badge" href="https://apps.apple.com/nl/app/aangiftealert-btw-op-tijd/id6819453752" aria-label="Download AangifteAlert in de App Store"><img src="assets/download-on-the-app-store-nl.svg" width="144" height="48" alt="Download in de App Store" loading="lazy"></a></section>
-    <div class="wrap responsibility"><p>AangifteAlert is een onafhankelijke app. Je controleert je persoonlijke deadlines met je aangiftebrief en de <a href="https://www.belastingdienst.nl/wps/wcm/connect/nl/btw/content/uiterste-aangifte-en-betaaldatums">officiële aangifte- en betaaldatums van de Belastingdienst</a>. Aangifte doen en betalen doe je zelf.</p></div>
   </main>
 
-  <footer class="footer"><div class="wrap"><p>© 2026 XHJ Digital · AangifteAlert</p><div class="footer-links"><a href="privacy/">Privacyverklaring</a><a href="terms/">Gebruiksvoorwaarden</a><a href="mailto:xhjdigital@gmail.com">Contact</a></div></div></footer>
+  <footer class="footer">
+    <div class="wrap responsibility"><p>AangifteAlert is een onafhankelijke app. Je controleert je persoonlijke deadlines met je aangiftebrief en de <a href="https://www.belastingdienst.nl/wps/wcm/connect/nl/btw/content/uiterste-aangifte-en-betaaldatums">officiële aangifte- en betaaldatums van de Belastingdienst</a>. Aangifte doen en betalen doe je zelf.</p></div>
+    <div class="wrap footer-bar"><p>© 2026 XHJ Digital · AangifteAlert</p><div class="footer-links"><a href="privacy/">Privacyverklaring</a><a href="terms/">Gebruiksvoorwaarden</a><a href="mailto:xhjdigital@gmail.com">Contact</a></div></div>
+  </footer>
 </body>
 </html>
