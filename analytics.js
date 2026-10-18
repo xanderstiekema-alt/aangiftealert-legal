@@ -108,7 +108,7 @@
     banner.hidden = false;
     banner.querySelector('h2').focus();
   });
-  (document.querySelector('footer .wrap') || document.querySelector('footer') || document.body).appendChild(settings);
+  (document.querySelector('footer .footer-links') || document.querySelector('footer nav') || document.querySelector('footer .wrap') || document.querySelector('footer') || document.body).appendChild(settings);
 
   document.addEventListener('click', (event) => {
     if (!enabled || choice !== 'accepted') return;
